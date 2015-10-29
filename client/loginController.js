@@ -35,8 +35,8 @@
             console.log('error: ', err);
           }
         });
-
-        $location.path('/');
+        // change location path for later for users
+        $location.path('/events/1');
         $window.location.reload();
         // $window.setTimeout(function(){
         //   $window.location.reload();
