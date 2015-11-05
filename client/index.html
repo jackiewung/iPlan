@@ -6,7 +6,10 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/stylesheet.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="./css/animation.css">
+=======
+>>>>>>> 51c9a6666eabda5ec8ea5db34b52a07f136ac0d9
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="./css/materialize/css/materialize.min.css"  media="screen,projection"/>
 </head>
@@ -63,6 +66,7 @@
       </div>
     </div> -->
 
+<<<<<<< HEAD
     <div class="left-padding">
       <div class="main-container">
         <div class="top-header">
@@ -73,6 +77,46 @@
           <button class="nav-button" ng-click="loginCtrl.showEvent()"> New Event </button>
         </div> <!-- END top-header -->
       </div> <!-- END main-container -->
+=======
+<div ng-controller="LoginController as loginCtrl" ng-cloak>
+  <div ng-if="!loginCtrl.hasToken" ng-cloak>
+   <div class="absolute-top" ng-cloak>
+      <div class="section-one" ng-cloak>
+          <div class="top-space"></div>
+          <div class="logo-header">
+            <div class="logo-green-i">i</div>Plan
+          </div>
+          <div class="description-header">
+            change how you plan for events
+          </div>
+          <input class="login-button" type="submit" ng-click="loginCtrl.login()" value="Log In"/>
+    </div>
+      </div>
+
+    <div class="section-two-one"></div>
+
+    <div class="section-two" ng-cloak>
+      <div class="section-two-container">
+        <div class="section-two-main-text">
+          Create. Find. Share.
+        </div>
+        <div class="section-two-description">
+          Organization made easy.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-two-three"></div>
+
+    <div class="section-three-container" ng-cloak>
+      <div class="section-three-top">
+        <div class="section-three-main-text">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+>>>>>>> 51c9a6666eabda5ec8ea5db34b52a07f136ac0d9
 
       <div class="bottom-container">
         <!-- hide the current event if newEvent is not clicked !-->
@@ -88,7 +132,42 @@
     </div> <!-- END left-padding -->
   </div> <!-- END ng-if hasToken -->
 
+<<<<<<< HEAD
 </div> <!-- END wrapper -->
+=======
+<!-- if user has a token, display a different view !-->
+ <div ng-controller="LoginController as loginCtrl" ng-cloak>
+  <div ng-if="loginCtrl.hasToken" ng-cloak>
+    <div class="body">
+      <div class="row">
+        <div class="leftbar">
+          <div class="left-title"><div class="green-i">i</div>Plan</div>
+          <div class="left-links">Ksenia Party </div>
+          <div class="left-links"> Nate Party </div>
+          <div class="left-links"> Jeff Party </div>
+          <div class="left-links"> Jackie Party </div>
+          <div class="left-links"> BABABASDSAD </div>
+        </div>
+
+    <div class="left-padding">
+      <div class="main-container">
+        <div class="top-header">
+          <div class="header-message">
+            Hello, {{loginCtrl.user.name}}!
+          </div>
+            <button class="nav-button" type="submit" ng-click="loginCtrl.logout()"> Log Out </button>
+            <button class="nav-button"> New Event </button> 
+        </div>
+
+    <div class="bottom-container">
+      <event-view-dir></event-view-dir>
+      <new-event-dir></new-event-dir>
+    </div>
+    
+  </div>
+</div>
+
+>>>>>>> 51c9a6666eabda5ec8ea5db34b52a07f136ac0d9
 
 <!-- SCRIPTS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
