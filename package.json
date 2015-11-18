@@ -20,6 +20,7 @@
     "bluebird": "^2.10.2",
     "body-parser": "^1.14.1",
     "bookshelf": "^0.8.2",
+    "config-heroku": "^0.1.1-a",
     "connect-flash": "^0.1.1",
     "express": "^4.13.3",
     "express-session": "^1.11.3",
